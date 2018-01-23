@@ -17,7 +17,8 @@ methodOverride = require("method-override"),
      campgroundRoutes  = require("./routes/campgrounds"),
      indexRoutes        = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/v10", {useMongoClient: true});
+//mongoose.connect("mongodb://localhost/v10", {useMongoClient: true});
+mongoose.connect("mongodb://abir:abirnu@ds111618.mlab.com:11618/yelpcamp_abir");
 //seedDB(); 
 //var request = require("request");
 app.use(bodyParser.urlencoded({extended: true}));
@@ -54,3 +55,4 @@ app.use("/campground/:id/comments",commentRoutes);
 app.listen(process.env.PORT, process.env.IP,function(){
     console.log("YelpCamp Server Has Started!!!");
 })
+
