@@ -21,7 +21,7 @@
 </ul>
 
 # Skills learned and Used:
-
+<ul>
 <li>HTML</li>
 <li>CSS</li>
 <li>Bootstrap</li>
@@ -33,5 +33,6 @@
 <li>User authentication, authorization</li>
 <li>Git, Git-Hub</li>
 <li>Heroku</li>
+  </ul>
 </body>
 </html>
