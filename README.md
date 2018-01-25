@@ -26,7 +26,7 @@
 <li>CSS</li>
 <li>Bootstrap</li>
 <li>JavaScript, jQuery</li>
-<li>Node.JS</li>
+<li>NodeJS</li>
 <li>npm : express, ejs, body-parser, request, method-override, express-sanitizer, connect-flash, passport.js, mongoose</li>
 <li>MongoDB</li>
 <li>Custom Middleware</li>
