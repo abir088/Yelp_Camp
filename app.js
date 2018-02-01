@@ -17,11 +17,11 @@ methodOverride = require("method-override"),
      campgroundRoutes  = require("./routes/campgrounds"),
      indexRoutes        = require("./routes/index");
 
-var url= process.env.DATABASEURL || "mongodb://localhost/v10";
-mongoose.connect(url, {useMongoClient: true});
 
+mongoose.connect(process.env.DATABASEURL, {useMongoClient: true});
+//mongoose.connect("mongodb://abir:abirnu@ds111618.mlab.com:11618/yelpcamp_abir");
 //seedDB(); 
-
+//var request = require("request");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
