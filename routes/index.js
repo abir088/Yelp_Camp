@@ -15,7 +15,7 @@ router.get("/",function(req, res) {
 //show register form
 router.get("/register",function(req,res){
     res.render("register");
-})
+});
 //handle Sign Up logic
 router.post("/register", function(req, res){
     var newUser = new User({username: req.body.username});
@@ -27,8 +27,8 @@ router.post("/register", function(req, res){
         passport.authenticate("local")(req, res, function(){
             req.flash("success","Welcome to YelpCamp "+ user.username+"!");
             res.redirect("/campground");
-        })
-    })
+        });
+    });
 });
 
 //SHOW LOGIN form
